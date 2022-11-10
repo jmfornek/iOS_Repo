@@ -36,6 +36,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     //@IBOutlet weak var showGraphLbl: UILabel!
     @IBOutlet weak var connectStatusLbl: UILabel!
     @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var cupslabel: UILabel!
     //@IBOutlet weak var chartBox: LineChartView!
     
     /*@IBAction func refreshBtn(_ sender: Any) {
@@ -317,8 +318,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
                                             encoding: String.Encoding.utf8.rawValue)
         else { return }
         
-        dataLabel.text = "Value: " + (receivedString as String)
-        
+        //dataLabel.text = "Value: " + (receivedString as String)
+        cupslabel.text = "Cups hit is " + (receivedString as String)
         //let myInt = (receivedString as NSString).integerValue
         
         /*
